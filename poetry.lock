@@ -1004,6 +1004,47 @@ files = [
 ]
 
 [[package]]
+name = "kagglehub"
+version = "1.0.0"
+description = "Access Kaggle resources anywhere"
+optional = false
+python-versions = ">=3.10"
+groups = ["main"]
+files = [
+    {file = "kagglehub-1.0.0-py3-none-any.whl", hash = "sha256:9397f0c6af04cdefa6fa8734c31b42863e8741aad5832c6f3af52f1ecf8fe509"},
+    {file = "kagglehub-1.0.0.tar.gz", hash = "sha256:21dc25d0279e2071f8b97cd9e1393d003ea5e054ea48f1e8139a39e4771e9a8d"},
+]
+
+[package.dependencies]
+kagglesdk = ">=0.1.14,<1.0"
+packaging = "*"
+pyyaml = "*"
+requests = "*"
+tqdm = "*"
+
+[package.extras]
+hf-datasets = ["datasets", "pandas"]
+pandas-datasets = ["pandas"]
+polars-datasets = ["polars"]
+signing = ["betterproto (>=2.0.0b6)", "model-signing", "sigstore (>=3.6.1)"]
+
+[[package]]
+name = "kagglesdk"
+version = "0.1.20"
+description = "Bindings to access kaggle's external-facing APIs"
+optional = false
+python-versions = ">=3.9"
+groups = ["main"]
+files = [
+    {file = "kagglesdk-0.1.20-py3-none-any.whl", hash = "sha256:be005560aa054f8ca75328179202c32558356c029905ce39c98242ba223815e1"},
+    {file = "kagglesdk-0.1.20.tar.gz", hash = "sha256:202d1ff30ade1f1d6f5231927355f0d5564da365dc15c1e12090a1311d89b3f7"},
+]
+
+[package.dependencies]
+protobuf = "*"
+requests = "*"
+
+[[package]]
 name = "kiwisolver"
 version = "1.5.0"
 description = "A fast implementation of the Cassowary constraint solver"
@@ -1877,6 +1918,24 @@ files = [
 ]
 
 [[package]]
+name = "protobuf"
+version = "7.34.1"
+description = ""
+optional = false
+python-versions = ">=3.10"
+groups = ["main"]
+files = [
+    {file = "protobuf-7.34.1-cp310-abi3-macosx_10_9_universal2.whl", hash = "sha256:d8b2cc79c4d8f62b293ad9b11ec3aebce9af481fa73e64556969f7345ebf9fc7"},
+    {file = "protobuf-7.34.1-cp310-abi3-manylinux2014_aarch64.whl", hash = "sha256:5185e0e948d07abe94bb76ec9b8416b604cfe5da6f871d67aad30cbf24c3110b"},
+    {file = "protobuf-7.34.1-cp310-abi3-manylinux2014_s390x.whl", hash = "sha256:403b093a6e28a960372b44e5eb081775c9b056e816a8029c61231743d63f881a"},
+    {file = "protobuf-7.34.1-cp310-abi3-manylinux2014_x86_64.whl", hash = "sha256:8ff40ce8cd688f7265326b38d5a1bed9bfdf5e6723d49961432f83e21d5713e4"},
+    {file = "protobuf-7.34.1-cp310-abi3-win32.whl", hash = "sha256:34b84ce27680df7cca9f231043ada0daa55d0c44a2ddfaa58ec1d0d89d8bf60a"},
+    {file = "protobuf-7.34.1-cp310-abi3-win_amd64.whl", hash = "sha256:e97b55646e6ce5cbb0954a8c28cd39a5869b59090dfaa7df4598a7fba869468c"},
+    {file = "protobuf-7.34.1-py3-none-any.whl", hash = "sha256:bb3812cd53aefea2b028ef42bd780f5b96407247f20c6ef7c679807e9d188f11"},
+    {file = "protobuf-7.34.1.tar.gz", hash = "sha256:9ce42245e704cc5027be797c1db1eb93184d44d1cdd71811fb2d9b25ad541280"},
+]
+
+[[package]]
 name = "pyarrow"
 version = "24.0.0"
 description = "Python library for Apache Arrow"
@@ -2714,4 +2773,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11,<4.0"
-content-hash = "6708a478a03a3bb857fb80d3cfd1aa2f82bdb7aa12731607594cd8a762b44e03"
+content-hash = "018442cec59d1a21c0de2f343dd5e73fe317be3ba9df87d922852ebeb3f6f0ba"
