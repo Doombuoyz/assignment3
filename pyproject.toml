@@ -16,7 +16,10 @@ dependencies = [
     "scikit-learn (>=1.8.0,<2.0.0)",
     "loguru (>=0.7.3,<0.8.0)",
     "dotenv (>=0.9.9,<0.10.0)",
-    "kagglehub (>=1.0.0,<2.0.0)"
+    "kagglehub (>=1.0.0,<2.0.0)",
+    "kaggle (>=2.0.2,<3.0.0)",
+    "sentence-transformers (>=5.4.1,<6.0.0)",
+    "chromadb (>=1.5.8,<2.0.0)"
 ]
 
 
